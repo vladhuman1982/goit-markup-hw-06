@@ -1,0 +1,575 @@
+:root {
+  --color-title: #212121;
+  --accent-color: #2196f3;
+  --color-title: #ffffff;
+  --bg-color-footer: #2f303a;
+  --bg-color-blue: #2196f3;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  letter-spacing: 0.02em;
+}
+/* ============================= current page ====================== */
+.page {
+  display: block;
+  position: relative;
+
+  color: #2196f3;
+}
+.header-item-underline {
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+}
+/* =================== header =========================== */
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header .link {
+  letter-spacing: 0.02em;
+}
+.header-container {
+  display: flex;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+.margin {
+  margin-left: auto;
+}
+/* ==================== header logo ===================== */
+.header-address + .header-address-flex {
+  margin-left: 50px;
+}
+.header-logo {
+  margin-right: 93px;
+
+  color: #2196f3;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+}
+/* ==================== span header-logo ===================== */
+.header-logo span {
+  color: #000000;
+}
+
+/* ========================= nav ===================== */
+.header-item {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #212121;
+}
+.header-link:hover,
+.header-link:focus {
+  color: #ffffff;
+}
+/* ====================== header address ============================ */
+.header-address {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #757575;
+}
+.header-address:not(:last-child) {
+  margin-right: 30px;
+}
+.header-address:hover,
+.header-address:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+.header-address-svg {
+  /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+  margin-right: 10px;
+
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.header-address:hover .header-address-svg,
+.header-address:focus .header-address-svg {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+/* ================== hero ================ */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/hero/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #c4c4c4;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-title);
+}
+/* =========================== hero btn  ============================= */
+.hero-btn {
+  display: inline-block;
+  border-color: var(--bg-color-blue);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--bg-color-blue);
+}
+/* ============================ advantages ============================= */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-flex {
+  display: flex;
+}
+.advantages-item {
+  width: 270px;
+}
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advantages-item:nth-child(1)::before {
+  background-image: url(../images/studio/advanteges/antenna.svg);
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../images/studio/advanteges/clock.svg);
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../images/studio/advanteges/diagram.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../images/studio/advanteges/astronaut.svg);
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-item-title {
+  margin-bottom: 10px;
+
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.advantages-text {
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* =============================== doing ======================================== */
+.doing {
+  padding-bottom: 94px;
+}
+.doing-flex {
+  display: flex;
+}
+.doing-title {
+  margin-bottom: 50px;
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.doing-img {
+  display: block;
+}
+/* ==================================== team ====================================== */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-title {
+  margin-bottom: 50px;
+
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  background-color: var(--bg-color-white);
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ============ team-img =============================*/
+.team-img {
+  margin-bottom: 30px;
+}
+/* ============ team-list-title =============================*/
+.team-list-title {
+  margin-bottom: 10px;
+
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+/* =================== team-text ==================*/
+.team-text {
+  margin-bottom: 16px;
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+/* ========================== team-link =============================== */
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  background-color: transparent;
+}
+.team-link:hover,
+.team-link:focus {
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+}
+/* ======================== team-social-list ============================ */
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+/* ======================== team-social-item ============================ */
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-item {
+  display: inline-block;
+}
+/* ======================== team-svg ============================ */
+.team-svg {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+}
+.team-link:hover .team-svg,
+.team-link:focus .team-svg {
+  fill: #ffffff;
+}
+/* ========================= clients ============================ */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+
+  color: var(--color-title);
+  font-weight: 700px;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.clients-svg {
+  width: 50px;
+  height: 50px;
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  fill: var(--accent-color);
+}
+/* ========================= footer ============================ */
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+/* ===================== footer-logo ========================= */
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #2196f3;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+}
+.footer-logo span {
+  color: #ffffff;
+}
+/* ===================== footer address ========================= */
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-container {
+  min-width: 231px;
+  margin-right: 70px;
+}
+.address {
+  display: block;
+  margin-bottom: 9px;
+
+  color: #ffffff;
+}
+/* ===================== footer email tel ========================= */
+.footer-address {
+  display: block;
+  margin-right: 70px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+/* ====================== footer titles ================================ */
+.footer-titles {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  color: var(--color-title);
+  background-color: var(--bg-color-footer);
+}
+/* ========================= join flex =============================== */
+.join-flex {
+  margin-right: 93px;
+}
+/* ==================== join list =================================== */
+.join-list {
+  display: flex;
+}
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link {
+  display: flex;
+  border-radius: 50%;
+
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-link:hover,
+.join-link:focus {
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+}
+.join-svg {
+  width: 20px;
+  height: 20px;
+
+  fill: #ffffff;
+}
+/* =============================== sing up input ======================================= */
+.sign-up-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+/* ============================== sign up button ================================== */
+.sing-up-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  width: 197px;
+  height: 50px;
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* ============================== sing up send =================================== */
+.sing-up-btn::after {
+  content: "";
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: #ffffff;
+}
+/* ============================== hero backdrop ================================== */
+.hero-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.hero-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: #ffffff;
+}
+.hero-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
+.hero-modal-btn-svg {
+  width: 11px;
+  height: 11px;
+
+  fill: #212121;
+}
