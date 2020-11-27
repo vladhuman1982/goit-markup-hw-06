@@ -546,11 +546,146 @@ address {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: #ffffff;
+}
+.hero-backdrop-form {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+
+  color: #212121;
+}
+.hero-backdrop-form-field {
+  display: flex;
+  flex-direction: column;
+
+  width: 448px;
+  height: 58px;
+  margin-bottom: 10px;
+}
+.hero-backdrop-form-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.hero-backdrop-form-div {
+  position: relative;
+}
+.hero-backdrop-form-div:hover .hero-backdrop-form-svg,
+.hero-backdrop-form-div:focus .hero-backdrop-form-svg {
+  fill: var(--accent-color);
+}
+.hero-backdrop-form-input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-backdrop-form-input:hover,
+.hero-backdrop-form-input:focus {
+  border-color: var(--accent-color);
+}
+.hero-backdrop-form-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: #212121;
+}
+.hero-backdrop-form-comment {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 448px;
+  height: 138px;
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.hero-backdrop-form-comment:hover,
+.hero-backdrop-form-comment:focus {
+  border: 1px solid var(--accent-color);
+}
+textarea {
+  resize: none;
+}
+.hero-backdrop-form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-backdrop-form-checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.hero-backdrop-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+.hero-backdrop-form-checkbox-label::before {
+  content: "";
+  /* display: inline-flex; */
+  border: 2px solid black;
+  border-radius: 2px;
+  fill: white;
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-backdrop-form-checkbox-label-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 8px;
+
+  color: #757575;
+}
+.hero-backdrop-form-checkbox-label-conditions {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+.hero-backdrop-form-btn {
+  display: block;
+  border-color: #2196f3;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
 }
 .hero-modal-btn {
   position: absolute;
@@ -558,6 +693,7 @@ address {
   right: 8px;
   display: flex;
   cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 30px;
   height: 30px;
@@ -566,6 +702,10 @@ address {
   border-radius: 50%;
 
   background-color: #ffffff;
+}
+.hero-modal-btn:hover .hero-modal-btn-svg,
+.hero-modal-btn:focus .hero-modal-btn-svg {
+  fill: var(--accent-color);
 }
 .hero-modal-btn-svg {
   width: 11px;
