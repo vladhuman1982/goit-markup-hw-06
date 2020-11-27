@@ -1,5 +1,7 @@
 :root {
+  --color-title: #212121;
   --accent-color: #2196f3;
+  --bg-color-footer: #2f303a;
   --accent-button-color: #ffffff;
   --accent-button-bg-color: #2196f3;
 }
@@ -145,14 +147,16 @@ header .link {
   margin-right: 8px;
 }
 .filters-btn {
-  border-radius: 4px;
-  border-color: transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 6px 22px;
   min-width: 73px;
   height: 38px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   color: #212121;
   background-color: #f5f4fa;
@@ -249,10 +253,11 @@ footer {
   display: block;
   margin-bottom: 20px;
 
-  color: #2196f3;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
+
+  color: #2196f3;
 }
 .footer-logo span {
   color: #ffffff;
@@ -341,12 +346,11 @@ address {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
 }
-/* ============================== sign up button ================================== */
+/* ============================== footer sign up button ================================== */
 .footer-sing-up-btn {
-  position: relative;
+  /* position: relative; */
   display: inline-flex;
   align-items: center;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 197px;
   height: 50px;
@@ -357,13 +361,13 @@ address {
   color: #ffffff;
   background-color: #2196f3;
 }
-/* ============================== sing up send =================================== */
+/* ============================== footer sing up send =================================== */
 .footer-sing-up-send {
-  position: absolute;
+  /* position: absolute; */
 
   width: 24px;
   height: 24px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 
   fill: #ffffff;
 }

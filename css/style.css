@@ -403,10 +403,11 @@ footer {
   display: block;
   margin-bottom: 20px;
 
-  color: #2196f3;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
+
+  color: #2196f3;
 }
 .footer-logo span {
   color: #ffffff;
@@ -495,7 +496,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
 }
-/* ============================== sign up button ================================== */
+/* ============================== footer sign up button ================================== */
 .footer-sing-up-btn {
   /* position: relative; */
   display: inline-flex;
@@ -510,7 +511,7 @@ address {
   color: #ffffff;
   background-color: #2196f3;
 }
-/* ============================== sing up send =================================== */
+/* ============================== footer sing up send =================================== */
 .footer-sing-up-send {
   /* position: absolute; */
 
