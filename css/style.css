@@ -483,7 +483,7 @@ address {
 
   fill: #ffffff;
 }
-/* =============================== footer sing up input ======================================= */
+/* =============================== footer sign up input ======================================= */
 .footer-sign-up-input {
   width: 358px;
   height: 50px;
@@ -497,10 +497,10 @@ address {
   background-color: #2f303a;
 }
 /* ============================== footer sign up button ================================== */
-.footer-sing-up-btn {
-  /* position: relative; */
+.footer-sign-up-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
 
   width: 197px;
   height: 50px;
@@ -511,13 +511,10 @@ address {
   color: #ffffff;
   background-color: #2196f3;
 }
-/* ============================== footer sing up send =================================== */
-.footer-sing-up-send {
-  /* position: absolute; */
-
+/* ============================== footer sign up svg =================================== */
+.footer-sign-up-svg {
   width: 24px;
   height: 24px;
-  /* margin-left: 10px; */
 
   fill: #ffffff;
 }
@@ -554,6 +551,8 @@ address {
   background-color: #ffffff;
 }
 .hero-backdrop-form {
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -564,8 +563,6 @@ address {
   display: flex;
   flex-direction: column;
 
-  width: 448px;
-  height: 58px;
   margin-bottom: 10px;
 }
 .hero-backdrop-form-label {
@@ -578,10 +575,6 @@ address {
 }
 .hero-backdrop-form-div {
   position: relative;
-}
-.hero-backdrop-form-div:hover .hero-backdrop-form-svg,
-.hero-backdrop-form-div:focus .hero-backdrop-form-svg {
-  fill: var(--accent-color);
 }
 .hero-backdrop-form-input {
   width: 100%;
@@ -598,25 +591,29 @@ address {
 .hero-backdrop-form-input:focus {
   border-color: var(--accent-color);
 }
+.hero-backdrop-form-input:hover + .hero-backdrop-form-svg,
+.hero-backdrop-form-input:focus + .hero-backdrop-form-svg {
+  fill: var(--accent-color);
+}
 .hero-backdrop-form-svg {
   position: absolute;
   top: 50%;
   left: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
+
   margin: 0;
   padding: 0;
   transform: translateY(-50%);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  fill: #212121;
+}
+textarea {
+  resize: none;
 }
 .hero-backdrop-form-comment {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 448px;
-  height: 138px;
-  padding: 12px;
+  height: 120px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -625,48 +622,51 @@ address {
 .hero-backdrop-form-comment:focus {
   border: 1px solid var(--accent-color);
 }
-textarea {
-  resize: none;
+.hero-backdrop-form-comment::placeholder {
+  font-size: 12px;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 .hero-backdrop-form-checkbox {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.hero-backdrop-form-checkbox-input {
   appearance: none;
   -webkit-appearance: none;
-}
-.hero-backdrop-form-checkbox-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   margin-bottom: 30px;
 }
-.hero-backdrop-form-checkbox-label::before {
-  content: "";
-  /* display: inline-flex; */
-  border: 2px solid black;
-  border-radius: 2px;
-  fill: white;
+.hero-backdrop-form-checkbox-check {
   width: 16px;
   height: 15px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
 }
-.hero-backdrop-form-checkbox-label-text {
-  display: inline-block;
+.hero-backdrop-form-checkbox-label {
   font-size: 14px;
-  line-height: 1.5;
-  margin-left: 8px;
+  line-height: 1.7;
 
   color: #757575;
 }
 .hero-backdrop-form-checkbox-label-conditions {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: #2196f3;
+}
+.hero-backdrop-form-checkbox-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  width: 16px;
+  height: 15px;
+}
+.hero-backdrop-form-checkbox-check:checked .hero-backdrop-form-checkbox-svg {
+  opacity: 1;
+  visibility: visible;
 }
 .hero-backdrop-form-btn {
   display: block;
@@ -703,9 +703,14 @@ textarea {
 
   background-color: #ffffff;
 }
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+  background-color: var(--accent-color);
+}
+
 .hero-modal-btn:hover .hero-modal-btn-svg,
 .hero-modal-btn:focus .hero-modal-btn-svg {
-  fill: var(--accent-color);
+  fill: #ffffff;
 }
 .hero-modal-btn-svg {
   width: 11px;

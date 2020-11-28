@@ -340,7 +340,7 @@
                 <p class="footer-titles">Подпишитесь на рассылку</p>
                 <div>
                     <input class="footer-sign-up-input" type="email" name="name" id="sign-up" placeholder="E-mail">
-                    <button type="submit" class="footer-sing-up-btn">Подписаться
+                    <button type="submit" class="footer-sign-up-btn">Подписаться
                         <svg class="footer-sign-up-svg">
                             <use href="./images/sprite.svg#send">
                         </svg>
@@ -357,7 +357,7 @@
                 <div class="hero-backdrop-form-field">
                     <label class="hero-backdrop-form-label" for="name">Имя</label>
                     <div class="hero-backdrop-form-div">
-                        <input autofocus class="hero-backdrop-form-input" type="text" name="name" id="name">
+                        <input class="hero-backdrop-form-input" type="text" name="name" id="name">
                         <svg class="hero-backdrop-form-svg" width="18" height="18">
                             <use href="./images/sprite.svg#person-black"></use>
                         </svg>
@@ -366,7 +366,7 @@
                 <div class="hero-backdrop-form-field">
                     <label class="hero-backdrop-form-label" for="tel">Телефон</label>
                     <div class="hero-backdrop-form-div">
-                        <input autofocus class="hero-backdrop-form-input" type="tel" name="tel" id="tel">
+                        <input class="hero-backdrop-form-input" type="tel" name="tel" id="tel">
                         <svg class="hero-backdrop-form-svg" width="18" height="18">
                             <use href="./images/sprite.svg#smartphone-black"></use>
                         </svg>
@@ -382,25 +382,25 @@
                     </div>
                 </div>
                 <div class="hero-backdrop-form-field">
-                    <label class="hero-backdrop-form-label" for="comment">Комментарий</label> <br>
-                    <textarea class="hero-backdrop-form-comment" name="comment" id="comment" rows=""></textarea>
+                    <label class="hero-backdrop-form-label" for="comment">Комментарий</label>
+                    <textarea class="hero-backdrop-form-comment" name="comment" id="comment" rows="" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="hero-backdrop-form-checkbox">
-                    <input class="hero-backdrop-form-checkbox-input" type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox" class="hero-backdrop-form-checkbox-label">
-                        <p class="hero-backdrop-form-checkbox-label-text">Соглашаюсь с рассылкой и принимаю <span class="hero-backdrop-form-checkbox-label-conditions"><a href="">Условия договора</a></span>
-                        </p>
-                    </label>
+                    <input class="hero-backdrop-form-checkbox-check" type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" class="hero-backdrop-form-checkbox-label"> Соглашаюсь с рассылкой и принимаю <a href="" class="hero-backdrop-form-checkbox-label-conditions">Условия договора</a></label>
+                    <svg class="hero-backdrop-form-checkbox-svg">
+                        <use href="./images/sprite.svg#check"></use>
+                    </svg>
                 </div>
-                <button type="submit" class="hero-backdrop-form-btn">Отправить</button>
-            </form>
-            <button type="button" class="hero-modal-btn" data-modal-close>
+                    <button type="submit" class="hero-backdrop-form-btn">Отправить</button>
+                </form>
+                <button type="button" class="hero-modal-btn" data-modal-close>
                 <svg class="hero-modal-btn-svg">
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
-            </button>
+                </button>
+            </div>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
-</body>
-</html>
+        <script src="./js/modal.js"></script>
+    </body>
+    </html>
